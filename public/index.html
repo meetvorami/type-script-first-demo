@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeScript Tutorial</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>Finance Logger</h1>
+    <div class="container">
+      <label>Total spend(paid-recived)</label>
+      <h4 class="total-spend" id="total-spend">0</h4>
+    </div>
+    <div class="container">
+      <label>Total amount paid</label>
+      <h4 class="total-paid-amount" id="total-paid-amount">0</h4>
+    </div>
+    <div class="container">
+      <label>Total amount recived</label>
+      <h4 class="total-recieved-amount" id="total-recieved-amount">0</h4>
+    </div>
+
+    <!-- output list -->
+    <ul class="item-list">
+      
+    </ul>
+  </div>
+
+  <footer>
+    <form class="new-item-form">
+      <div class="field">
+        <label>Type:</label>
+        <select id="type">
+          <option value="paid">Paid</option>
+          <option value="recived">Recived</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>To / From:</label>
+        <input type="text" id="tofrom">
+      </div>   
+      <div class="field">
+        <label>Details:</label>
+        <input type="text" id="details">
+      </div>
+      <div class="field">
+        <label>Amount:</label>
+        <input type="number" id="amount">
+      </div>
+      <button>Add</button>
+    </form>
+
+  </footer>
+
+  <script type="module" src='./js/app.js'></script>
+</body>
+</html>
